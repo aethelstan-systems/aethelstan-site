@@ -1,9 +1,199 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Aethelstan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aethelstan — AI Resolution Diagnostic</title>
+
+<link rel="canonical" href="https://aethelstan.co/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://aethelstan.co/#organization",
+  "name": "Aethelstan Systems",
+  "url": "https://aethelstan.co/",
+  "description": "Aethelstan is a public AI resolution diagnostic that evaluates structural identity clarity across AI systems."
+}
+</script>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000000 70%);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    color: #f3f3f3;
+}
+
+/* NAV */
+
+nav {
+    position: absolute;
+    top: 3vh;
+    right: 4vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* HERO */
+
+.hero {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MONUMENTAL WORD */
+
+.monument {
+    font-weight: 900;
+    font-size: 19vw;
+    letter-spacing: -0.055em;
+    line-height: 0.86;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* INSTRUMENT */
+
+.instrument {
+    margin-top: 3.5vh;
+    display: flex;
+}
+
+.instrument input {
+    width: 400px;
+    max-width: 70vw;
+    padding: 14px 18px;
+    background: transparent;
+    border: 2px solid #1f1f1f;
+    color: #ffffff;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.instrument input::placeholder {
+    color: #555555;
+    letter-spacing: 0.08em;
+}
+
+.instrument button {
+    padding: 14px 26px;
+    border: 2px solid #1f1f1f;
+    border-left: none;
+    background: transparent;
+    color: #ffffff;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.instrument button:hover {
+    background: #ffffff;
+    color: #000000;
+    border-color: #ffffff;
+}
+
+/* ENTITY REINFORCEMENT (SUBTLE) */
+
+.identity-anchor {
+    position: absolute;
+    bottom: 3vh;
+    left: 4vw;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6a6a6a;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        top: 2.5vh;
+        right: 5vw;
+    }
+
+    .monument {
+        font-size: 30vw;
+    }
+
+    .instrument {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .instrument button {
+        border-left: 2px solid #1f1f1f;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 70vw;
+    }
+
+    .identity-anchor {
+        font-size: 0.6rem;
+    }
+}
+</style>
 </head>
+
 <body>
-    Aethelstan
+
+<nav>
+    <ul>
+        <li><a href="/resolution.html">Resolution</a></li>
+        <li><a href="/faq.html">FAQ</a></li>
+        <li><a href="/about.html">About</a></li>
+    </ul>
+</nav>
+
+<main class="hero">
+
+    <h1 class="monument">RESOLUTION</h1>
+
+    <form class="instrument" action="#" method="post">
+        <input type="text" placeholder="Enter domain" aria-label="Domain input">
+        <button type="submit">Run Diagnostic</button>
+    </form>
+
+</main>
+
+<div class="identity-anchor">
+    AETHELSTAN SYSTEMS — AI RESOLUTION DIAGNOSTIC
+</div>
+
 </body>
 </html>

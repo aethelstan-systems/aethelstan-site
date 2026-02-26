@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About — Aethelstan</title>
+
+<link rel="canonical" href="https://aethelstan.co/about.html">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://aethelstan.co/#organization",
+  "name": "Aethelstan Systems",
+  "url": "https://aethelstan.co/",
+  "description": "Aethelstan is a public AI Surface diagnostic that evaluates structural identity clarity across AI systems."
+}
+</script>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000000 70%);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f3f3f3;
+}
+
+/* NAV */
+
+nav {
+    position: absolute;
+    top: 3vh;
+    right: 4vw;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 0.75rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #bdbdbd;
+    transition: color 0.2s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* DOCUMENTATION LAYOUT */
+
+.doc-container {
+    max-width: 860px;
+    margin: 160px auto 120px auto;
+    padding: 0 28px;
+}
+
+.doc-container h1 {
+    font-size: 40px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+
+.doc-container h2 {
+    font-size: 0.95rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+    color: #ffffff;
+}
+
+.doc-container p {
+    line-height: 1.75;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    color: #d6d6d6;
+}
+
+/* ENTITY REINFORCEMENT */
+
+.identity-anchor {
+    position: fixed;
+    bottom: 3vh;
+    left: 4vw;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #6a6a6a;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.identity-anchor:hover {
+    color: #9a9a9a;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        top: 2.5vh;
+        right: 5vw;
+    }
+
+    .doc-container {
+        margin: 120px auto 120px auto;
+    }
+
+    .doc-container h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .identity-anchor {
+        font-size: 0.6rem;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <ul>
+        <li><a href="surface-diagnostic.html">Surface Diagnostic</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="about.html">About</a></li>
+    </ul>
+</nav>
+
+<main class="doc-container">
+
+    <h1>Aethelstan — About</h1>
+
+    <h2>What Aethelstan Is</h2>
+    <p>
+        Aethelstan is a public diagnostic instrument that evaluates whether a site’s visible structural and identity signals support stable and reliable representation within AI systems. It focuses exclusively on what can be observed on the site surface, examining whether identifiers, structure, metadata, linking, and declared identity align coherently.
+    </p>
+    <p>
+        The instrument does not interpret narrative meaning or brand intention. Its concern is structural clarity and whether a site presents a unified identity across its surface.
+    </p>
+
+    <h2>Design Principle</h2>
+    <p>
+        AI systems consolidate structural and identity signals into internal representations based on what is declared and how it is organised. The stability of that representation depends less on persuasive language and more on consistency across the site surface.
+    </p>
+    <p>
+        Where identity is clearly anchored and reinforced, representation tends to stabilise. Where signals vary or conflict, systems must reconcile competing information. The diagnostic examines whether the structural conditions support coherence rather than fragmentation.
+    </p>
+
+    <h2>Scope</h2>
+    <p>
+        Aethelstan evaluates structural clarity across six dimensions: Identity Declaration, Identifier Stability, Structural Hierarchy, Surface Coherence, Graph Integrity, and Signal Reinforcement. Each dimension reflects a different way in which identity and structure either support or weaken coherence across a site.
+    </p>
+    <p>
+        The diagnostic operates strictly within observable boundaries. It does not access model internals, inspect algorithmic processes, or rely on proprietary ranking systems. Its analysis remains confined to publicly accessible site structure and the consistency of signals across that structure.
+    </p>
+    <p>
+        By limiting its scope to what can be directly observed, the instrument maintains methodological discipline and avoids speculative inference.
+    </p>
+
+    <h2>Boundary</h2>
+    <p>
+        Aethelstan does not modify or optimise a site. It does not adjust rankings, rewrite content, alter performance metrics, or interact with external platforms. Its function is evaluative.
+    </p>
+    <p>
+        The instrument reports on structural conditions as they exist at the time of assessment. Any decision to adjust, restructure, or reinterpret those conditions remains external to the diagnostic itself. Observation and intervention remain distinct.
+    </p>
+
+    <h2>Position</h2>
+    <p>
+        Aethelstan is designed as a technical diagnostic tool. It is automated and self serve by design. While advisory services may exist independently, they are not embedded within the instrument.
+    </p>
+    <p>
+        Its purpose is to provide structural clarity regarding how a site presents itself to AI systems. It does not offer strategy or opinion. It renders visible the coherence or incoherence of the surface.
+    </p>
+
+</main>
+
+<a href="index.html" class="identity-anchor">
+    AETHELSTAN SYSTEMS — AI SURFACE DIAGNOSTIC
+</a>
+
+</body>
+</html>

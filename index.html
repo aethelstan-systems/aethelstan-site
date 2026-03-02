@@ -16,11 +16,7 @@
 }
 </script>
 <style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+* { margin: 0; padding: 0; box-sizing: border-box; }
 html, body {
     height: 100%;
     background: radial-gradient(circle at center, #0a0a0a 0%, #000000 70%);
@@ -28,119 +24,66 @@ html, body {
     overflow: hidden;
     color: #f3f3f3;
 }
-/* NAV */
-nav {
-    position: absolute;
-    top: 3vh;
-    right: 4vw;
-}
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 28px;
-}
+nav { position: absolute; top: 3vh; right: 4vw; }
+nav ul { list-style: none; display: flex; gap: 28px; }
 nav a {
-    text-decoration: none;
-    font-size: 0.75rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #bdbdbd;
-    transition: color 0.2s ease;
+    text-decoration: none; font-size: 0.75rem; letter-spacing: 0.14em;
+    text-transform: uppercase; color: #bdbdbd; transition: color 0.2s ease;
 }
-nav a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-/* HERO */
-.hero {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-/* MONUMENTAL WORD */
+nav a:hover { color: #ffffff; text-decoration: underline; }
+.hero { height: 100vh; width: 100vw; display: flex; flex-direction: column; justify-content: center; align-items: center; }
 .monument {
-    font-weight: 700;
-    font-size: clamp(44px, 6.5vw, 92px);
-    letter-spacing: 0.18em;
-    line-height: 1.05;
-    text-transform: uppercase;
-    white-space: nowrap;
+    font-weight: 700; font-size: clamp(44px, 6.5vw, 92px); letter-spacing: 0.18em;
+    line-height: 1.05; text-transform: uppercase; white-space: nowrap;
 }
-/* INSTRUMENT */
-.instrument {
-    margin-top: 3.5vh;
-    display: flex;
-}
+.instrument { margin-top: 3.5vh; display: flex; }
 .instrument input {
-    width: 400px;
-    max-width: 70vw;
-    padding: 14px 18px;
-    background: transparent;
-    border: 2px solid #1f1f1f;
-    color: #ffffff;
-    font-size: 0.95rem;
-    outline: none;
+    width: 400px; max-width: 70vw; padding: 14px 18px;
+    background: transparent; border: 2px solid #1f1f1f; color: #ffffff;
+    font-size: 0.95rem; outline: none;
 }
-.instrument input::placeholder {
-    color: #555555;
-    letter-spacing: 0.08em;
-}
+.instrument input::placeholder { color: #555555; letter-spacing: 0.08em; }
 .instrument button {
-    padding: 14px 26px;
-    border: 2px solid #1f1f1f;
-    border-left: none;
-    background: transparent;
-    color: #ffffff;
-    font-size: 0.8rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    cursor: pointer;
+    padding: 14px 26px; border: 2px solid #1f1f1f; border-left: none;
+    background: transparent; color: #ffffff; font-size: 0.8rem;
+    letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer;
     transition: all 0.2s ease;
 }
-.instrument button:hover {
-    background: #ffffff;
-    color: #000000;
-    border-color: #ffffff;
-}
-/* ENTITY REINFORCEMENT (SUBTLE) */
+.instrument button:hover { background: #ffffff; color: #000000; border-color: #ffffff; }
 .identity-anchor {
-    position: absolute;
-    bottom: 3vh;
-    left: 4vw;
-    font-size: 0.7rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: #6a6a6a;
+    position: absolute; bottom: 3vh; left: 4vw; font-size: 0.7rem;
+    letter-spacing: 0.14em; text-transform: uppercase; color: #6a6a6a;
 }
-/* MOBILE */
 @media (max-width: 768px) {
-    nav {
-        top: 2.5vh;
-        right: 5vw;
-    }
-    .monument {
-        font-size: clamp(28px, 10vw, 48px);
-        letter-spacing: 0.14em;
-        white-space: normal;
-        text-align: center;
-    }
-    .instrument {
-        flex-direction: column;
-        align-items: center;
-    }
-    .instrument button {
-        border-left: 2px solid #1f1f1f;
-        margin-top: 10px;
-        width: 100%;
-        max-width: 70vw;
-    }
-    .identity-anchor {
-        font-size: 0.6rem;
-    }
+    nav { top: 2.5vh; right: 5vw; }
+    .monument { font-size: clamp(28px, 10vw, 48px); letter-spacing: 0.14em; white-space: normal; text-align: center; }
+    .instrument { flex-direction: column; align-items: center; }
+    .instrument button { border-left: 2px solid #1f1f1f; margin-top: 10px; width: 100%; max-width: 70vw; }
+    .identity-anchor { font-size: 0.6rem; }
 }
+/* DASHBOARD MODE */
+.dashboard {
+    position: absolute; top: 0; left: 0; height: 100vh; width: 100vw;
+    background: #000; padding: 6vh 6vw; display: flex; flex-direction: column;
+    opacity: 0; transition: opacity 0.4s ease;
+}
+.dashboard.visible { opacity: 1; }
+.hidden { display: none; }
+.dashboard-header { margin-bottom: 4vh; }
+.back-btn {
+    background: transparent; border: 1px solid #444; color: #aaa;
+    padding: 8px 14px; cursor: pointer; font-size: 0.7rem;
+    letter-spacing: 0.12em; text-transform: uppercase;
+}
+.back-btn:hover { border-color: #fff; color: #fff; }
+.score-panel { margin-bottom: 6vh; }
+.score-value { font-size: 72px; font-weight: bold; }
+.score-band { font-size: 18px; letter-spacing: 0.14em; margin-top: 8px; color: #888; }
+.score-meta { margin-top: 12px; font-size: 0.75rem; color: #666; }
+.dimension-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; }
+.dimension-card { border: 1px solid #222; padding: 18px; background: #0a0a0a; }
+.dimension-title { font-size: 0.75rem; letter-spacing: 0.14em; margin-bottom: 12px; color: #888; }
+.dimension-score { font-size: 28px; }
 </style>
 </head>
 <body>
@@ -164,18 +107,51 @@ nav a:hover {
         <button type="submit">Run Diagnostic</button>
     </form>
 </main>
+
+<section id="dashboard" class="dashboard hidden">
+    <div class="dashboard-header">
+        <button id="newScanBtn" class="back-btn">← New Scan</button>
+    </div>
+    <div class="dashboard-content">
+        <div class="score-panel">
+            <div class="score-value" id="scoreValue">--</div>
+            <div class="score-band" id="scoreBand">--</div>
+            <div class="score-meta" id="pagesLoaded">--</div>
+        </div>
+        <div class="dimension-grid" id="dimensionGrid">
+            <!-- Dimension cards inserted dynamically -->
+        </div>
+    </div>
+</section>
+
 <div class="identity-anchor">
     AETHELSTAN SYSTEMS — AI SURFACE DIAGNOSTIC
 </div>
 <script>
 const form = document.getElementById("scanForm");
 const input = document.getElementById("domainInput");
+const dashboard = document.getElementById("dashboard");
+const newScanBtn = document.getElementById("newScanBtn");
+const scoreValue = document.getElementById("scoreValue");
+const scoreBand = document.getElementById("scoreBand");
+const pagesLoaded = document.getElementById("pagesLoaded");
+const dimensionGrid = document.getElementById("dimensionGrid");
+
+function showDashboard() {
+    dashboard.classList.remove("hidden");
+    setTimeout(() => { dashboard.classList.add("visible"); }, 10);
+}
+
+function hideDashboard() {
+    dashboard.classList.remove("visible");
+    setTimeout(() => { dashboard.classList.add("hidden"); }, 400);
+}
+
+newScanBtn.addEventListener("click", () => { hideDashboard(); });
 
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
-
     const domain = input.value.trim();
-
     if (!domain) return;
 
     try {
@@ -183,23 +159,34 @@ form.addEventListener("submit", async (e) => {
             "https://aethelstan-api.onrender.com/v1/scan",
             {
                 method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ domain })
             }
         );
 
         const data = await response.json();
 
-        console.log("Scan result:", data);
-
         if (!response.ok) {
-            alert("Error: " + data.detail);
+            alert(data.detail || "Error");
             return;
         }
 
-        alert("Scan complete. Score: " + data.composite_score);
+        scoreValue.textContent = data.composite_score;
+        scoreBand.textContent = data.band;
+        pagesLoaded.textContent = `Pages Loaded: ${data.pages_loaded}`;
+
+        dimensionGrid.innerHTML = "";
+        Object.entries(data.dimensions).forEach(([name, details]) => {
+            const card = document.createElement("div");
+            card.className = "dimension-card";
+            card.innerHTML = `
+                <div class="dimension-title">${name}</div>
+                <div class="dimension-score">${details.score}</div>
+            `;
+            dimensionGrid.appendChild(card);
+        });
+
+        showDashboard();
 
     } catch (err) {
         console.error(err);
